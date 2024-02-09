@@ -1,0 +1,218 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: rgba(131, 31, 1, 0.34);
+    margin-right: 20rem;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* Supprimez la marge par défaut du corps */
+    padding: 0;
+}
+
+/* Styles pour vos autres éléments */
+
+/* header section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* Aligner les éléments à chaque extrémité */
+    align-items: center;
+    /* Centrer verticalement */
+    padding: 10px;
+    /* Ajoutez un espacement autour des éléments */
+}
+
+.contact_nav {
+    display: flex;
+    align-items: center;
+    /* Centrer verticalement */
+}
+
+.contact_nav a {
+    margin-right: 15px;
+    /* Ajoutez un espace entre les éléments */
+}
+
+.categories_nav {
+    display: flex;
+}
+
+.categories_nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.categories_nav li {
+    margin-right: 15px;
+    /* Ajoutez un espace entre les éléments */
+}
+
+.categories_nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* fin header section */
+
+/* article */
+
+.company_info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    /* Aligner le contenu à gauche */
+    align-items: center;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.logo_and_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Aligner le logo et le texte à gauche */
+}
+
+.text_info {
+    font-size: 16px;
+    margin-top: 32px;
+}
+
+.company_info img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 10px;
+}
+
+.company_info .text_info {
+    flex: 1;
+    text-align: left;
+    /* Aligner le texte à gauche */
+}
+
+.company_info .banner_image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.category_buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.category_buttons li {
+    margin-right: 57px;
+    align-self: center;
+}
+
+.category_buttons button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 259px;
+    height: 214px;
+    background-color: #FFFFFF;
+    /* Couleur d'origine avant inversion */
+    border: 1px solid #831F01;
+    /* Ajout de la bordure */
+    cursor: pointer;
+    /* Effet drop shadow */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s;
+    /* Animation de transition pour le changement de couleur */
+}
+
+.category_buttons button:hover {
+    background-color: #831F01;
+}
+
+.category_buttons img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 15px;
+    /* Couleur du texte et de l'image SVG à l'intérieur du bouton */
+    filter: invert(100%);
+}
+
+/* Styling pour le texte à l'intérieur du bouton */
+.category_buttons button span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    /* Taille du texte en pixels */
+}
+
+/* Couleur initiale avant inversion */
+.category_buttons button .initial-color {
+    color: #831F01;
+    transition: color 0.3s;
+}
+
+/* Couleur après inversion */
+.category_buttons button:hover .initial-color {
+    color: #FFFFFF;
+}
+
+/* fin article */
+
+/* sections */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    /* Ajustez selon vos besoins */
+    position: relative;
+}
+
+
+.full-width {
+    width: calc(100% + 40rem);
+    /* Ajustez la valeur selon vos besoins */
+    margin-left: -20rem;
+    /* La moitié de la valeur ajoutée à la largeur */
+    position: relative;
+    background-color: #FFFFFF;
+    /* Couleur de fond pour les sections pleine largeur */
+}
+
+.default {
+    background-color: #FFFFFF;
+}
+
+.content {
+    flex: 1;
+    max-width: 50%;
+}
+
+img {
+    max-width: 40%;
+    /* Ajustez selon vos besoins */
+}
+
+.reversed .content {
+    order: 2;
+    /* Inverse l'ordre des éléments à l'intérieur de la section */
+}
+
+.reversed img {
+    order: 1;
+    /* Inverse l'ordre des éléments à l'intérieur de la section */
+}
+
+/* fin sections */
