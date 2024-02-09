@@ -135,8 +135,7 @@ body {
 }
 
 .category_buttons li {
-    margin-right: 57px;
-    align-self: center;
+    margin-right: 4%;
 }
 
 .category_buttons button {
@@ -145,8 +144,14 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 259px;
-    height: 214px;
+    width: 20vw;
+    /* Utilisez une unité relative (viewport width) pour la largeur */
+    max-width: 240px;
+    /* Ajoutez une largeur maximale pour éviter le débordement sur de petites écrans */
+    height: 20vh;
+    /* Utilisez une unité relative (viewport height) pour la hauteur */
+    max-height: 200px;
+    /* Ajoutez une hauteur maximale */
     background-color: #FFFFFF;
     /* Couleur d'origine avant inversion */
     border: 1px solid #831F01;
@@ -304,7 +309,7 @@ footer {
     font-size: 14px;
     border-top: 2px solid #FFFFFF;
     /* Ajouter la ligne blanche au-dessus du paragraphe */
-    width: 973.98px;
+    width: 50%;
     /* Spécifier la largeur de la ligne */
     margin-left: auto;
     margin-right: auto;
