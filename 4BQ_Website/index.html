@@ -24,37 +24,63 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!-- Script JavaScript pour protéger les adresses e-mail -->
+  <script language='JavaScript' type='text/javascript'>
+    var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+    var path = 'hr' + 'ef' + '=';
+    var add12345 = '&#105;n' + 'f&#111;&#64;' + '4&#98;q' + '&#46;b&#101;';
+    document.write('<span class="protected-email" style=\'font-family:myFirstFont,sans-serif;font-size:24px;\'><a ' + path + '\'' + prefix + ':' + add12345 + '\'>');
+    document.write(add12345);
+    document.write('<\/a></span>');
+  </script>
+
+  <!-- Ajout du style CSS pour masquer la classe protected-email -->
+  <style>
+    .protected-email {
+      display: none;
+    }
+  </style>
+
+  <script>
+    function changePage(sectionId) {
+      // Redirigez l'utilisateur vers la section spécifiée
+      window.location.href = '#' + sectionId;
+    }
+  </script>
+
   <title>4BQ | Audit et Conseil en Belgique et Luxembourg</title>
 
 </head>
 
 <body>
   <!-- header section -->
-  <header class="header">
+  <header class="header section-with-margin">
     <div class="contact_nav">
       <a href="tel:+32491255687">
-        <img src="images/email_brown.svg" alt="Téléphone" />
+        <img src="images/phone_brown.svg" alt="Téléphone" />
         <span>+32 491 255 687</span>
       </a>
-      <a href="mailto:info@4bq.be">
-        <img src="images/phone_brown.svg" alt="Email" />
-        <span>info@4bq.be</span>
-      </a>
+      <script language='JavaScript' type='text/javascript'>
+        document.write('<a href="mailto:info@4bq.be">');
+        document.write('<img src="images/email_brown.svg" alt="Email" />');
+        document.write('<span>info@4bq.be</span>');
+        document.write('</a>');
+      </script>
     </div>
 
     <nav class="categories_nav">
       <ul>
-        <li><a href="lien-audit">Audit</a></li>
-        <li><a href="lien-concepts">Concepts</a></li>
-        <li><a href="lien-conseils">Conseils</a></li>
-        <li><a href="lien-backup">Backup</a></li>
+        <li><a href="#section-audit">Audit</a></li>
+        <li><a href="#section-concepts">Concepts</a></li>
+        <li><a href="#section-conseils">Conseils</a></li>
+        <li><a href="#section-backup">Backup</a></li>
       </ul>
     </nav>
   </header>
   <!-- end header section -->
 
   <article>
-    <div class="company_info">
+    <div class="company_info section-with-margin">
       <div class="logo_and_text">
         <img src="images/logo.svg" alt="Logo de 4BQ" class="logo" />
         <div class="text_info">
@@ -69,25 +95,25 @@
     </div>
     <ul class="category_buttons">
       <li>
-        <button onclick="window.location.href='lien-audit'" class="color-transition">
+        <button onclick="changePage('section-audit')" class="color-transition">
           <img src="images/bouton_1.svg" alt="Audit" />
           <span class="span initial-color">AUDIT</span>
         </button>
       </li>
       <li>
-        <button onclick="window.location.href='lien-concepts'" class="color-transition">
+        <button onclick="changePage('section-concepts')" class="color-transition">
           <img src="images/bouton_2.svg" alt="Concepts" />
           <span class="span initial-color">CONCEPTS</span>
         </button>
       </li>
       <li>
-        <button onclick="window.location.href='lien-conseils'" class="color-transition">
+        <button onclick="changePage('section-conseils')" class="color-transition">
           <img src="images/bouton_3.svg" alt="Conseils" />
           <span class="span initial-color">CONSEILS</span>
         </button>
       </li>
       <li>
-        <button onclick="window.location.href='lien-backup'" class="color-transition">
+        <button onclick="changePage('section-backup')" class="color-transition">
           <img src="images/bouton_4.svg" alt="Backup" />
           <span class="span initial-color">BACKUP</span>
         </button>
@@ -155,7 +181,9 @@
     <img src="images/image_backup.svg" alt="Image Backup" />
   </section>
 
-  <p>Pour que l’informatique soit <strong>enfin</strong> une aide à la simplification des process d’entreprise.</p>
+  <p class="slogan full-width">Pour que l’informatique soit <strong>enfin</strong> une aide à la simplification des
+    process
+    d’entreprise.</p>
 
 
 
@@ -166,10 +194,12 @@
         <img src="images/phone_orange.svg" alt="Téléphone" />
         <span>+32 491 255 687</span>
       </a>
-      <a href="mailto:info@4bq.be">
-        <img src="images/email_orange.svg" alt="Email" />
-        <span>info@4bq.be</span>
-      </a>
+      <script language='JavaScript' type='text/javascript'>
+        document.write('<a href="mailto:info@4bq.be">');
+        document.write('<img src="images/email_orange.svg" alt="Email" />');
+        document.write('<span>info@4bq.be</span>');
+        document.write('</a>');
+      </script>
     </div>
 
     <p class="rights_reserved">

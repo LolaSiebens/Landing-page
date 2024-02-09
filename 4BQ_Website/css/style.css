@@ -5,15 +5,16 @@ body {
     line-height: 1.5;
     text-align: left;
     background-color: rgba(131, 31, 1, 0.34);
-    margin-right: 20rem;
-    margin-left: 20rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    /* Supprimez la marge par défaut du corps */
+    margin: 0;
     padding: 0;
 }
 
-/* Styles pour vos autres éléments */
+.section-with-margin {
+    margin-right: 12rem;
+    margin-left: 12rem;
+}
+
+
 
 /* header section */
 .header {
@@ -33,7 +34,7 @@ body {
 }
 
 .contact_nav a {
-    margin-right: 15px;
+    margin-right: 32px;
     /* Ajoutez un espace entre les éléments */
 }
 
@@ -56,7 +57,23 @@ body {
 .categories_nav a {
     text-decoration: none;
     color: black;
+    margin-right: 22px;
 }
+
+.contact_nav a {
+    border-bottom: none;
+}
+
+.contact_nav a span {
+    text-decoration: none;
+    color: black;
+}
+
+.contact_nav img {
+    margin-right: 12px;
+    /* Ajoutez une marge droite de 12px aux images */
+}
+
 
 /* fin header section */
 
@@ -82,7 +99,7 @@ body {
 }
 
 .text_info {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 32px;
 }
 
@@ -111,6 +128,10 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    position: relative;
+    /* Ajoutez cette ligne */
+    z-index: 1;
+    /* Ajoutez cette ligne pour garantir que les boutons restent au-dessus du fond */
 }
 
 .category_buttons li {
@@ -135,6 +156,12 @@ body {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transition: background-color 0.3s;
     /* Animation de transition pour le changement de couleur */
+    position: relative;
+    /* Ajoutez cette ligne */
+    top: 50%;
+    /* Ajoutez cette ligne */
+    transform: translateY(50%);
+    /* Ajoutez cette ligne pour centrer verticalement */
 }
 
 .category_buttons button:hover {
@@ -146,7 +173,15 @@ body {
     max-height: 100%;
     margin-bottom: 15px;
     /* Couleur du texte et de l'image SVG à l'intérieur du bouton */
+    filter: invert(0%);
+    /* Inverse la couleur de l'image (noir devient blanc) */
+    transition: filter 0.3s;
+    /* Ajoutez une transition pour un effet doux */
+}
+
+.category_buttons button:hover img {
     filter: invert(100%);
+    /* Retourne à la couleur d'origine au survol */
 }
 
 /* Styling pour le texte à l'intérieur du bouton */
@@ -155,6 +190,7 @@ body {
     font-weight: bold;
     font-size: 16px;
     /* Taille du texte en pixels */
+    color: #831F01;
 }
 
 /* Couleur initiale avant inversion */
@@ -175,20 +211,28 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 75px;
     /* Ajustez selon vos besoins */
     position: relative;
 }
 
+#section-backup {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#section-audit {
+    padding-top: 12rem;
+}
+
 
 .full-width {
-    width: calc(100% + 40rem);
+    width: 100%;
     /* Ajustez la valeur selon vos besoins */
-    margin-left: -20rem;
-    /* La moitié de la valeur ajoutée à la largeur */
     position: relative;
     background-color: #FFFFFF;
     /* Couleur de fond pour les sections pleine largeur */
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .default {
@@ -216,3 +260,56 @@ img {
 }
 
 /* fin sections */
+
+/* début footer */
+.slogan {
+    text-align: center;
+    /* Centrer le texte */
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #831F01;
+    /* Couleur de fond */
+    color: #FFFFFF;
+    /* Couleur du texte */
+    text-align: center;
+    /* Centrer le texte */
+    padding: 20px;
+    /* Ajouter un espacement interne */
+}
+
+.contact_info_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contact_info_footer a {
+    margin-right: 20px;
+    /* Ajouter un espacement entre les éléments si nécessaire */
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.contact_info_footer img {
+    margin-right: 15px;
+}
+
+.rights_reserved {
+    margin-top: 20px;
+    /* Ajouter une marge en haut */
+    font-size: 14px;
+    border-top: 2px solid #FFFFFF;
+    /* Ajouter la ligne blanche au-dessus du paragraphe */
+    width: 973.98px;
+    /* Spécifier la largeur de la ligne */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    /* Ajouter un espacement au-dessus de la ligne */
+}
+
+/* fin footer */
