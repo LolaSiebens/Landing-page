@@ -10,8 +10,8 @@ body {
 }
 
 .section-with-margin {
-    margin-right: 12rem;
-    margin-left: 12rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
 }
 
 
@@ -23,8 +23,9 @@ body {
     /* Aligner les éléments à chaque extrémité */
     align-items: center;
     /* Centrer verticalement */
-    padding: 10px;
-    /* Ajoutez un espacement autour des éléments */
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    font-size: 18px;
 }
 
 .contact_nav {
@@ -36,6 +37,7 @@ body {
 .contact_nav a {
     margin-right: 32px;
     /* Ajoutez un espace entre les éléments */
+    text-decoration: none;
 }
 
 .categories_nav {
@@ -79,6 +81,19 @@ body {
 
 /* article */
 
+article h1 {
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+article p {
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: bold;
+}
+
 .company_info {
     display: flex;
     flex-wrap: nowrap;
@@ -99,8 +114,7 @@ body {
 }
 
 .text_info {
-    font-size: 14px;
-    margin-top: 32px;
+    margin-top: 4rem;
 }
 
 .company_info img {
@@ -220,6 +234,17 @@ section {
     position: relative;
 }
 
+section p {
+    font-size: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+section h2 {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
 #section-backup {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -227,8 +252,23 @@ section {
 
 #section-audit {
     padding-top: 12rem;
+    padding-bottom: 6rem;
 }
 
+#section-concepts {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#section-conseils {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#section-backup {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
 
 .full-width {
     width: 100%;
@@ -236,8 +276,8 @@ section {
     position: relative;
     background-color: #FFFFFF;
     /* Couleur de fond pour les sections pleine largeur */
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
 }
 
 .default {
@@ -272,6 +312,7 @@ img {
     /* Centrer le texte */
     margin-bottom: 0;
     margin-top: 0;
+    font-size: 18px;
 }
 
 footer {
@@ -290,6 +331,8 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    font-size: 18px;
+
 }
 
 .contact_info_footer a {
@@ -315,6 +358,7 @@ footer {
     margin-right: auto;
     padding: 2rem;
     /* Ajouter un espacement au-dessus de la ligne */
+    font-size: 14px;
 }
 
 /* fin footer */
