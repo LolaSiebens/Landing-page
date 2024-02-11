@@ -76,6 +76,32 @@
         <li><a href="#section-backup">Backup</a></li>
       </ul>
     </nav>
+
+    <!-- Image du menu cliquable -->
+    <div class="menu-icon">
+      <img src="images/menu.svg" alt="Menu">
+    </div>
+
+    <!-- Div du fond qui apparaîtra sur la droite de l'écran -->
+    <div class="nav-background">
+      <nav class="menu_nav">
+        <ul>
+          <li><a href="#section-audit">Audit</a></li>
+          <li><a href="#section-concepts">Concepts</a></li>
+          <li><a href="#section-conseils">Conseils</a></li>
+          <li><a href="#section-backup">Backup</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+32491255687">
+        <img src="images/phone_orange.svg" alt="Téléphone" />
+        <span>+32 491 255 687</span>
+      </a>
+      <a href="mailto:info@4bq.be">
+        <img src="images/email_orange.svg" alt="Email" />
+        <span>info@4bq.be</span>
+      </a>
+    </div>
+
   </header>
   <!-- end header section -->
 
@@ -123,7 +149,7 @@
 
 
   <!-- Sections Audit, Concepts, Conseils, Backup -->
-  <section id="section-audit" class="full-width">
+  <section id="section-audit" class="full-width mobile">
     <div class="content">
       <h2>AUDIT</h2>
       <p>
@@ -208,6 +234,28 @@
     </p>
   </footer>
   <!-- footer section -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Sélectionnez l'élément de l'image du menu
+      var menuIcon = document.querySelector('.menu-icon');
+
+      // Sélectionnez l'élément du fond de navigation
+      var navBackground = document.querySelector('.nav-background');
+
+      // Ajoutez un gestionnaire d'événements de clic à l'image du menu
+      menuIcon.addEventListener('click', function () {
+        // Ajoutez ou retirez la classe 'active' sur le fond de navigation
+        navBackground.classList.toggle('active');
+      });
+
+      // Ajoutez un gestionnaire d'événements de clic au fond de navigation
+      navBackground.addEventListener('click', function () {
+        // Retirez la classe 'active' lorsque le fond est cliqué
+        navBackground.classList.remove('active');
+      });
+    });
+  </script>
 
 </body>
 

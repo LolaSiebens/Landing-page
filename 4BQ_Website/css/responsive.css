@@ -5,11 +5,16 @@
         margin-left: 2rem;
     }
 
+
     /* header */
     .company_info {
         display: flex;
         flex-direction: column;
         /* Disposition en colonne pour les petits écrans */
+    }
+
+    .company_info img {
+        width: 250px;
     }
 
     .banner_image {
@@ -19,6 +24,7 @@
     .logo_and_text {
         order: 1;
         /* Mettre le logo et le texte en haut */
+        width: 300px;
     }
 
     .banner_image {
@@ -28,14 +34,56 @@
         /* Assurer que l'image prend toute la largeur */
     }
 
+    .menu-icon {
+        display: inline-block;
+        position: fixed;
+        top: 4rem;
+        /* Ajustez la valeur en fonction de votre mise en page */
+        right: 3rem;
+        /* Ajustez la valeur en fonction de votre mise en page */
+        z-index: 11;
+        cursor: pointer;
+    }
+
+    .nav-background a {
+        font-size: 14px;
+    }
+
+    .nav-background {
+        background-color: #831F01;
+        /* Fond opaque de couleur #831F01 */
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-out;
+        will-change: transform;
+        z-index: 10;
+        display: block;
+    }
+
+    .nav-background.active {
+        transform: translateX(0);
+        /* Affiche le fond de navigation lorsque la classe active est présente */
+    }
+
+
+    .company_info .banner_image {
+        width: 310px;
+    }
+
     /* article */
 
     article h1 {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 2;
     }
 
     article p {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 2;
     }
 
     .category_buttons {
@@ -44,21 +92,20 @@
         justify-content: center;
         /* Centrer les éléments */
         margin: 0 auto;
-        padding: 1;
         text-align: -webkit-center;
     }
 
     .category_buttons li {
         width: 100%;
         /* Pour la version mobile, occuper toute la largeur disponible */
-        margin-bottom: 4%;
+        padding: 12px;
         margin-right: 0;
     }
 
     .category_buttons button {
         max-width: 100%;
-        width: 80%;
-        height: 6vh;
+        width: 262px;
+        height: 79px;
         display: flex;
         flex-direction: row;
         /* Afficher les éléments en ligne */
@@ -73,22 +120,36 @@
         margin-right: 5px;
         margin-bottom: 0;
         /* Ajouter une marge à droite de l'image */
-        max-height: 70%;
+        max-height: 100%;
+        width: 77px;
+        height: 52px;
     }
 
+    .contact_nav,
+    .categories_nav {
+        display: none;
+    }
+
+    .content {
+        max-width: 75%;
+    }
 
     /* sections */
 
     section p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     section h2 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    section img {
+        width: 185px;
     }
 
     #section-concepts {
-        padding-top: 6rem;
+        padding-top: 4rem;
         padding-bottom: 6rem;
     }
 
@@ -100,6 +161,49 @@
     #section-conseils {
         padding-top: 6rem;
         padding-bottom: 6rem;
+    }
+
+    #section-backup {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+    }
+
+    .full-width {
+        display: flex;
+        flex-direction: column;
+        /* Affiche les éléments en colonne */
+        align-items: center;
+        /* Centre les éléments horizontalement */
+    }
+
+    .full-width .content {
+        order: 1;
+        /* Change l'ordre des éléments pour que le contenu soit affiché en dessous */
+    }
+
+    .full-width img {
+        margin-bottom: 2rem;
+        /* Ajoute une marge en bas de l'image pour l'éloigner du contenu */
+    }
+
+    .reversed {
+        flex-direction: column-reverse;
+        /* Affiche les éléments en colonne inversée */
+        align-items: center;
+        /* Centre les éléments horizontalement */
+    }
+
+    .reversed .content,
+    .reversed img {
+        margin-bottom: 2rem;
+        /* Ajoute une marge en bas de l'image pour l'éloigner du contenu */
+    }
+
+    .reversed img {
+        order: 2;
+        /* Met l'image en haut en inversant l'ordre */
+        margin-top: 1rem;
+        /* Ajoute une marge en haut pour séparer l'image du contenu */
     }
 
     /* footer */
@@ -143,19 +247,97 @@
     .category_buttons li {
         width: 100%;
         /* Définir la largeur de chaque élément à 100% (deux par ligne avec un petit espace entre eux) */
-        margin-bottom: 2%;
-        /* Ajouter une marge entre les lignes */
+        padding: 18px;
     }
 
     .category_buttons button {
-        width: 25vw;
-        height: 15vh;
+        width: 254px;
+        height: 178px;
+    }
+
+    .category_buttons img {
+        width: 125px;
+        height: 90px;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        position: fixed;
+        top: 4rem;
+        /* Ajustez la valeur en fonction de votre mise en page */
+        right: 6rem;
+        /* Ajustez la valeur en fonction de votre mise en page */
+        z-index: 11;
+        cursor: pointer;
+    }
+
+    .nav-background a {
+        font-size: 16px;
+    }
+
+    .nav-background {
+        background-color: #831F01;
+        /* Fond opaque de couleur #831F01 */
+        color: white;
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-out;
+        will-change: transform;
+        z-index: 10;
+        display: block;
+    }
+
+    .nav-background.active {
+        transform: translateX(0);
+        /* Affiche le fond de navigation lorsque la classe active est présente */
+    }
+
+    .contact_nav,
+    .categories_nav {
+        display: none;
+    }
+
+    .company_info {
+        margin-bottom: 9rem;
+    }
+
+    .company_info .banner_image {
+        width: 310px;
+
+    }
+
+    .company_info img {
+        width: 250px;
+        position: relative;
+        bottom: 2rem;
+    }
+
+    /* article */
+
+    article h1 {
+        font-size: 18px;
+    }
+
+    article p {
+        font-size: 18px;
+        position: absolute;
     }
 
     /* sections */
+    section h2 {
+        font-size: 20px;
+    }
 
     section p {
         font-size: 16px;
+    }
+
+    section img {
+        width: 235px;
     }
 
     #section-concepts {
