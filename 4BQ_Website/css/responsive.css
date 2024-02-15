@@ -106,6 +106,7 @@
         max-width: 100%;
         width: 262px;
         height: 79px;
+        min-height: auto;
         display: flex;
         flex-direction: row;
         /* Afficher les éléments en ligne */
@@ -226,6 +227,8 @@
 
     .contact_info_footer a {
         padding: 4px;
+        margin-right: 3rem;
+        margin-left: 3rem;
     }
 
 }

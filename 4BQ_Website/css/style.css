@@ -207,14 +207,10 @@ article p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 20vw;
-    /* Utilisez une unité relative (viewport width) pour la largeur */
+    width: 30vh;
+    height: 25vh;
     max-width: 240px;
     /* Ajoutez une largeur maximale pour éviter le débordement sur de petites écrans */
-    height: 20vh;
-    /* Utilisez une unité relative (viewport height) pour la hauteur */
-    max-height: 200px;
-    /* Ajoutez une hauteur maximale */
     background-color: #FFFFFF;
     /* Couleur d'origine avant inversion */
     border: 1px solid #831F01;
@@ -230,6 +226,7 @@ article p {
     /* Ajoutez cette ligne */
     transform: translateY(50%);
     /* Ajoutez cette ligne pour centrer verticalement */
+    padding: 25px;
 }
 
 .category_buttons button:hover {
